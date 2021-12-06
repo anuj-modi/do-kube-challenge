@@ -1,0 +1,6 @@
+falco:
+  grpc:
+    enabled: True
+
+  grpcOutput:
+    enabled: True

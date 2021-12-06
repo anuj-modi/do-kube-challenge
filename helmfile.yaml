@@ -1,0 +1,7 @@
+helmDefaults:
+  atomic: true
+  wait: true
+
+helmfiles:
+  - path: metrics-server/helmfile.yaml
+  - path: grafana-loki/helmfile.yaml

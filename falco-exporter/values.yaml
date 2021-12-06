@@ -1,0 +1,6 @@
+serviceMonitor:
+  enabled: True
+
+grafanaDashboard:
+  enabled: True
+  namespace: monitoring
