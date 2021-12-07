@@ -1,5 +1,6 @@
 serviceMonitor:
   enabled: True
+  interval: 3s
 
 grafanaDashboard:
   enabled: True
