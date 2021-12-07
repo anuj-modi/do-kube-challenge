@@ -9,4 +9,3 @@ releases:
   version: 0.6.2
   values:
     - values.yaml
-

@@ -5,3 +5,5 @@ helmDefaults:
 helmfiles:
   - path: metrics-server/helmfile.yaml
   - path: grafana-prometheus/helmfile.yaml
+  - path: falco/helmfile.yaml
+  - path: falco-exporter/helmfile.yaml

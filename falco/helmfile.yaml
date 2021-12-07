@@ -9,7 +9,3 @@ releases:
   version: 1.16.2
   values:
     - values.yaml
-  set:
-    - name: foo.config
-      file: path/to/file
-
