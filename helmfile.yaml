@@ -4,4 +4,4 @@ helmDefaults:
 
 helmfiles:
   - path: metrics-server/helmfile.yaml
-  - path: grafana-loki/helmfile.yaml
+  - path: grafana-prometheus/helmfile.yaml
