@@ -4,3 +4,14 @@ falco:
 
   grpcOutput:
     enabled: True
+
+  jsonOutput: true
+  jsonIncludeOutputProperty: true
+  httpOutput:
+    enabled: true
+    url: "http://falcosidekick:2801/"
+
+falcosidekick:
+  enabled: true
+  webui:
+    enabled: true
