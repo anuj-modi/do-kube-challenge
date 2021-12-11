@@ -3,8 +3,4 @@ helmDefaults:
   wait: true
 
 helmfiles:
-  - path: metrics-server/helmfile.yaml
-  - path: grafana-prometheus/helmfile.yaml
-  - path: falco/helmfile.yaml
-  - path: falco-exporter/helmfile.yaml
-  - path: loki/helmfile.yaml
+  - path: apps/*/helmfile.yaml
