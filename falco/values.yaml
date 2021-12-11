@@ -11,6 +11,11 @@ falco:
     enabled: true
     url: "http://falcosidekick:2801/"
 
+  auditLog:
+    enabled: true
+    dynamicBackend:
+      enabled: true
+
 falcosidekick:
   enabled: true
   webui:
