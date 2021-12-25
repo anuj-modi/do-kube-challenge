@@ -20,3 +20,11 @@ falcosidekick:
   enabled: true
   webui:
     enabled: true
+
+customRules:
+  rules-vcluster.yaml: |-
+    - rule: Vcluster Syncer deployed
+      desc: Detect a when a vcluster has been deployed into a namespace
+      condition: container_started and container and container.image.repository endswith "loftsh/vcluster"
+      output: A VCluster syncer has been deployed (k8s.ns=%k8s.ns.name k8s.pod=%k8s.pod.name container.id=%container.id)
+      priority: WARNING
