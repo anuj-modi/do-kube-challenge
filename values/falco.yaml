@@ -23,6 +23,8 @@ falcosidekick:
 
 customRules:
   rules-vcluster.yaml: |-
+    - list: user_known_packet_socket_binaries
+      items: [cilium-agent]
     - rule: Vcluster Syncer deployed
       desc: Detect a when a vcluster has been deployed into a namespace
       condition: container_started and container and container.image.repository endswith "loftsh/vcluster"
