@@ -8,7 +8,7 @@ data "digitalocean_kubernetes_versions" "doks" {
 }
 
 resource "digitalocean_kubernetes_cluster" "doks" {
-  name          = "k8s-1-21-5-do-0-nyc3-1638763498666"
+  name          = "challenge-cluster"
   region        = "nyc3"
   auto_upgrade  = true
   surge_upgrade = false
@@ -20,7 +20,7 @@ resource "digitalocean_kubernetes_cluster" "doks" {
   }
 
   node_pool {
-    name       = "pool-ou76lq063"
+    name       = "challenge-cluster-pool"
     size       = "s-2vcpu-4gb"
     node_count = 3
   }
