@@ -64,16 +64,16 @@ resource "helm_release" "falco_exporter" {
   ]
 }
 
-# resource "helm_release" "vcluster" {
-#   name       = "vcluster"
-#   repository = "https://charts.loft.sh"
-#   chart      = "vcluster"
-#   version    = "0.4.5"
+resource "helm_release" "vcluster" {
+  name       = "vcluster"
+  repository = "https://charts.loft.sh"
+  chart      = "vcluster"
+  version    = "0.4.5"
 
-#   namespace        = "vcluster"
-#   create_namespace = true
+  namespace        = "vcluster"
+  create_namespace = true
 
-#   values = [
-#     "${file("values/vcluster.yaml")}"
-#   ]
-# }
+  values = [
+    "${file("values/vcluster.yaml")}"
+  ]
+}
