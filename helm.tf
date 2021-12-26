@@ -8,7 +8,6 @@ resource "helm_release" "metrics_server" {
   create_namespace = true
 }
 
-
 resource "helm_release" "grafana_prometheus" {
   name       = "prometheus-stack"
   repository = "https://prometheus-community.github.io/helm-charts"
